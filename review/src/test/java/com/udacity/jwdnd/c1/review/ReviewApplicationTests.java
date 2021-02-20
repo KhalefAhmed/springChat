@@ -43,13 +43,13 @@ class ReviewApplicationTests {
 
 	@Test
 	public void testUserSignupLoginAndSubmitMessage() {
-		String username = "pzastoup";
+		String username = "khalef";
 		String password = "whatabadpassword";
 		String messageText = "Hello!";
 
 		driver.get(baseURL + "/signup");
 		SignUpPage signupPage = new SignUpPage(driver);
-		signupPage.signup("Peter", "Zastoupil", username, password);
+		signupPage.signup("Khalil", "Khalef", username, password);
 
 		driver.get(baseURL + "/login");
 
